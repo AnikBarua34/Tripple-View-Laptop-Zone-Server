@@ -33,7 +33,7 @@ async function run(){
             const getNewProduct = await cursor.toArray();
             res.send(getNewProduct);
         })
-        // POST ADD NEW PRODUCT API, 4 
+        // POST ADD NEW PRODUCT API, 4 ]
         app.post('/postAddNewProduct', async (req,res)=>{
             const newProduct =req.body;
             const result =await addNewProductsCollection.insertOne(newProduct);
