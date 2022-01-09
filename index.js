@@ -154,7 +154,7 @@ async function run(){
 run().catch(console.dir);
 
 app.get('/',async (req,res)=>{
-    res.send('Welcome to crazy bikers server')
+    res.send('Welcome to Tripple View server')
 });
 
 app.listen(port, ()=>{
